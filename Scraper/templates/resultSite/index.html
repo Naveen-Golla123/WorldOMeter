@@ -1,0 +1,329 @@
+<!--
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/ -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html class="no-js" prefix="og: http://ogp.me/ns#"  lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Votify</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="description" content="We craft awesome Bootstrap themes for free and share selected resources for web designer &amp; developer. Download Free HTML themes for Bootstrap" />
+        <link href="img/logo_icon_96dp.png" rel="apple-touch-icon" sizes="96x96">
+        <link href="img/logo_icon_96dp.png" rel="icon" sizes="96x96" type="image/png">
+        <link href="img/logo_icon_32dp.png" rel="icon" sizes="32x32" type="image/png">
+        <meta content="img/logo_icon_96dp.png" name="msapplication-TileImage">
+
+        <meta property="og:url" content="https://www.boostraptheme.com/demo/index.html" />
+        <meta property="og:title" content="Free Bootstrap Template" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:site_name" content="Boostraptheme" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="BoostrapTheme" />
+        <meta name="twitter:creator" content="BoostrapTheme" />
+
+        <link rel='stylesheet' href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/app.css'  %}">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<style media="screen">
+  .accordion .card-header:after {
+      font-family: 'FontAwesome';
+      content: "\f068";
+      float: right;
+  }
+  .accordion .card-header.collapsed:after {
+      /* symbol for "collapsed" panels */
+      content: "\f067";
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th,td {
+    border-width: 1px;
+    word-wrap: break-word;
+
+}
+td{
+  color:black;
+
+}
+.centric {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.place-name{
+  font-size: 50px;
+}
+.total-cases{
+  font-size: 20px;
+}
+.total-count{
+  font-size: 30px;
+}
+.footer-cases{
+  font-size: 20px;
+}
+.footer-count{
+  font-size: 25px;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+</style>
+
+    </head>
+
+    <body>
+
+        <!-- TOPNAVBAR
+            =================-->
+            <div class="topmenu">
+               <div class="container-fluid">
+                <div class="row"  id="page-top">
+                  <div class="col-md-6 col-sm-6">
+                     <!-- <div class="info">Vofity<i class="fa fa-long-arrow-right"></i></div> -->
+                  </div>
+                  <div class="col-md-6 sec col-sm-6">
+                  	<div class="social">
+                  		<ul>
+                  			<li>Social Corner </li>
+                  			<li><a href="#"><i class="fa fa-facebook"></a></i></li>
+                  			<li><a href="#"><i class="fa fa-twitter"></a></i></li>
+                  			<li><a href="#"><i class="fa fa-google-plus"></a></i></li>
+                  		</ul>
+                  	</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- NAVBAR
+            =================-->
+            <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" data-toggle="affix">
+              <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="./"><img src="{% static 'img/team-logo/mainlogo.png' %}" width="150" height="80" alt="" class="img-fluid"></a>
+                <button class="navbar-toggler navbar-toggler-center  ml-auto py-3 my-1 " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="score.html">Score</a>
+                    </li>-->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/news">News</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+        <!-- NEWS
+            =================-->
+            
+                <!-- <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <!-- RIGHT NEWS
+                                =================-->
+                             <!-- <div class="right-news"> -->
+                                
+                                <!--leaderborad starts-->
+                                <!-- <div class="top-player">
+                                    <div class="card text-center mt-3">
+                                      <div class="card-header">
+                                        2019 ఆంధ్ర అసెంబ్లీ ఎన్నికల ఫలితాలు
+                                      </div>
+                                      <div class="card-body">
+                                        <div class="col-md-12">
+                                          <div class="run top-head">
+
+                                            <p><img src="{% static 'img/team-logo/jsplogo.png' %}" alt="" width="50" ></p>
+                                            <p>జనసేన పార్టీ</p>
+                                            <p>1</p>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <div class="top-head">
+                                            
+                                            
+                                            <p>151</p>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <div class="top-head">
+                                            <p><img src="{% static 'img/team-logo/tdplogo.png' %}" alt="" width="50" ></p>
+                                            <p>తెలుగుదేశం పార్టీ</p>
+                                            <p>23</p>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                          <div class="top-head">
+                                            <p><img src="{% static 'img/team-logo/elctionlogo.png' %}" alt="" width="50" ></p>
+                                            <p>మొత్తం సీట్లు</p>
+                                            <p>175</p>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                </div>
+                        </div> --> 
+                      <!-- </div> -->
+
+                    <div class="container-fulid top-player">
+                      <div class="row card text-center mt-3">
+                        <!-- header -->
+                        <div class="card-header">
+                          This header can removed if not needed
+                        </div>
+                        <!-- header end -->
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-5">
+                          <div class="row" >
+                                <span class="centric place-name">World</span>                     
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="top-head centric">
+                              <div class="row">
+                                <span class="centric total-count">{{worldresult.totalCases}}</span>
+                              </div>
+                              <div clss="row">
+                                <span class="centric total-cases">TotalCases</span>
+                              </div>                             
+                            </div>
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="top-head centric">     
+                                <div class="row">
+                                  <span class="centric footer-count">{{worldresult.activeCases}}</span>
+                                </div>      
+                                <div clsss="row">
+                                  <span class="total-cases" style="margin-left: 22px;" >Active Cases</span>
+                                </div>                                                                                   
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="top-head centric">     
+                                <div class="row">
+                                  <span class="centric footer-count">{{worldresult.recovered}}</span>
+                                </div>      
+                                <div clsss="row">
+                                  <span class="total-cases" style="margin-left: 10px;" >Recovered Cases</span>
+                                </div>                                                                                   
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="top-head centric">     
+                                <div class="row">
+                                  <span class="centric footer-count">{{worldresult.deaths}}</span>
+                                </div>      
+                                <div clsss="row">
+                                  <span class="total-cases" style="margin-left: 49px;">Deaths</span>
+                                </div>                                                                                   
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="vertical-center">
+                            <i class="centric">VS</i>
+                          </div>                          
+                        </div>
+                        <div class="col-lg-5">
+                          <div class="row" >
+                                <span class="centric place-name">India</span>                     
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="top-head centric">
+                              <div class="row">
+                                <span class="centric total-count">{{indiaResult.totalCases}}</span>
+                              </div>
+                              <div clss="row">
+                                <span class="centric total-cases">TotalCases</span>
+                              </div>                             
+                            </div>
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="top-head centric">     
+                                <div class="row">
+                                  <span class="centric footer-count">{{indiaResult.activeCases}}</span>
+                                </div>      
+                                <div clsss="row">
+                                  <span class="total-cases" style="margin-left: 22px;" >Active Cases</span>
+                                </div>                                                                                   
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="top-head centric">     
+                                <div class="row">
+                                  <span class="centric footer-count">{{indiaResult.recovered}}</span>
+                                </div>      
+                                <div clsss="row">
+                                  <span class="total-cases" style="margin-left: 10px;" >Recovered Cases</span>
+                                </div>                                                                                   
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="top-head centric">     
+                                <div class="row">
+                                  <span class="centric footer-count">{{indiaResult.deaths}}</span>
+                                </div>      
+                                <div clsss="row">
+                                  <span class="total-cases" style="margin-left: 49px;">Deaths</span>
+                                </div>                                                                                   
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+ 
+            
+
+
+
+        <script src="{% static 'js/jquery.min.js'%}"></script>
+        <!-- <script src="{% static 'js/popper.min.js'%}"</script> -->
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+        <script src="{% static 'js/jquery.easing.min.js'%}"></script>
+        <script src="{% static 'js/app.js'%}"></script>
+
+    </body>
+</html>
